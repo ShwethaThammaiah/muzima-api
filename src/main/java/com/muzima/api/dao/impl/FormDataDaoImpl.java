@@ -127,6 +127,7 @@ public class FormDataDaoImpl extends SearchableDaoImpl<FormData> implements Form
                 .key("dataSource").value("Mobile Device")
                 .key("payload").value(getPayloadBasedOnDiscriminator(formData))
                 .key("discriminator").value(formData.getDiscriminator())
+                .key("formName").value(formData.getFormName())
                 .endObject();
         writer.close();
 

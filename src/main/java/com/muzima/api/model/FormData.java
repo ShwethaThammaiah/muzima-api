@@ -39,6 +39,8 @@ public class FormData implements Searchable {
 
     private Date encounterDate;
 
+    private String formName;
+
     /**
      * Get the form data uuid.
      *
@@ -217,5 +219,13 @@ public class FormData implements Searchable {
      */
     public void setEncounterDate(Date encounterDate) {
         this.encounterDate = encounterDate;
+    }
+
+    public String getFormName() {
+        return formName;
+    }
+
+    public void setFormName(String formName) {
+        this.formName = formName;
     }
 }
